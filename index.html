@@ -81,7 +81,7 @@ h3{
   font-weight:600;
   margin:32px 0 14px;
 }
-h3:first-of-type{margin-top:0}
+h2 + h3{margin-top:0}
 p{margin:0 0 14px}
 a{color:var(--accent)}
 
@@ -166,7 +166,7 @@ details summary:hover{text-decoration:underline}
   display:flex;
   flex-wrap:wrap;
   align-items:baseline;
-  gap:10px;
+  gap:10px 12px;
 }
 .btn{
   display:inline-block;
@@ -221,7 +221,9 @@ footer{
   <p class="affil">Truman State University &middot; Kirksville, Missouri</p>
   <nav class="links">
     <a href="mailto:hyi@truman.edu">hyi@truman.edu</a>
-    <a href="Haneul_Yi_CV.pdf">Curriculum Vitae (PDF)</a>
+    <a href="Haneul_Yi_CV.pdf">Curriculum Vitae</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
     <!-- 아래 두 줄은 링크가 생기면 주석을 풀고 주소를 넣으세요 -->
     <!-- <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> -->
     <!-- <a href="https://www.linkedin.com/in/XXXX">LinkedIn</a> -->
@@ -230,7 +232,9 @@ footer{
 
 <section id="about">
   <p class="lede">I am an Assistant Professor of Business Administration at Truman State University. I received my Ph.D. in Finance from Texas A&amp;M University in 2025.</p>
-  <p>My research studies how firms acquire innovation from outside their own boundaries, and what that acquisition does and does not transfer. Recent work examines corporate venture capital as a precursor to acquisition, the retention of inventors after a merger, and the acquisition of green technology by firms under environmental regulation. I work with patent text, deal-level data, and machine learning methods.</p>
+  <p>My research asks what a firm acquires when it buys technology from outside, and what that purchase changes inside the firm. A purchase is recorded as an addition to what the firm holds. My papers ask what follows from it, whether operations change, whether internal invention continues, and what the transaction does not transfer. My job market paper shows that firms under environmental regulation acquire green technology that raises their environmental rating without reducing their emissions. Related projects examine what a firm stops inventing after it buys AI computing capacity, and which of a target's inventors an acquirer retains after the patents have changed hands.</p>
+  <p>The technology a firm holds and the environmental record it carries are not reported in financial statements. I measure both from text, primarily patent documents, regulatory disclosures, and corporate filings, and combine those measures with quasi-experimental variation in regulatory pressure, in technology adoption, and in what an acquirer knows before it bids. The underlying data links patent full text, classifications, and inventor records to firms across VentureXpert, SDC, Crunchbase, and Compustat, and joins facility-level records from the EPA Toxics Release Inventory to parent firms.</p>
+  <p>Future work runs in three directions, artificial intelligence and financial technology, sustainable finance, and machine learning and textual analysis as measurement methods.</p>
   <ul class="interests">
     <li>Innovation Economics</li>
     <li>Corporate Venture Capital</li>
@@ -299,12 +303,30 @@ footer{
   </article>
 </section>
 
-<section id="cv">
-  <h2>Curriculum Vitae</h2>
+<section id="teaching">
+  <h2>Teaching</h2>
+  <p>I have been instructor of record since 2022, first at Texas A&amp;M University, where I taught asynchronous online sections of more than four hundred students and received the Dean's Award for Outstanding Teaching by a Doctoral Student. I approach a course as a design problem and revise it against evidence of what students do.</p>
+  <p>At Truman State University I proposed replacing Seminar in Finance, a general course built on essays and visiting speakers, with a course in financial modeling and valuation. The revision was approved through the curriculum process and the catalog title changes in the 2026&ndash;27 year. Students choose a public company and carry it through to an equity valuation, drawing inputs from primary filings rather than a prepared dataset.</p>
+
+  <h3>Online Course Design and Assessment</h3>
+  <p>Personal Finance became an asynchronous course in Fall 2026. A student working alone has no one to notice when they have not understood something, so the course has to check. I rebuilt the slides around figures and diagrams and cut them into segments short enough to carry a fifteen to twenty minute video, each closing on a single idea. Every video ends with questions on what it covered, and every week ends with an open-book quiz over that week's videos.</p>
+  <p>Conventional assessment has been harder to rely on since generative models became widely available, and an online course makes it harder still. I rewrote the assignments so that each student works with a different set of figures, drawn from digits in the student's own identification number, and applies the material to their own finances. A submission produced from the prompt alone does not satisfy the task, and answers cannot pass between students.</p>
+
+  <h3>Courses Taught</h3>
+  <p>Principles of Finance, Personal Finance, Financial Modeling and Valuation (Truman State University). Survey of Finance Principles (Texas A&amp;M University). Teaching assistant for Investment Analysis, International Finance, and Valuation.</p>
+
+  <h3>Courses I Am Prepared to Teach</h3>
+  <p>Corporate finance, investment analysis, international finance, and corporate valuation. I would develop courses in mergers and acquisitions and in textual analysis and machine learning in finance.</p>
+</section>
+
+<section id="materials">
+  <h2>Job Market Materials</h2>
   <div class="cv-line">
-    <a class="btn" href="Haneul_Yi_CV.pdf">Download CV (PDF)</a>
-    <span class="meta">Updated August 2026</span>
+    <a class="btn" href="Haneul_Yi_CV.pdf">Curriculum Vitae</a>
+    <a class="btn" href="Haneul_Yi_Research_Statement.pdf">Research Statement</a>
+    <a class="btn" href="Haneul_Yi_Teaching_Statement.pdf">Teaching Statement</a>
   </div>
+  <p class="meta" style="margin-top:12px">Updated August 2026</p>
 </section>
 
 <section id="contact">
