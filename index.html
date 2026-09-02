@@ -38,7 +38,25 @@ body{
 .wrap{max-width:var(--maxw);margin:0 auto;padding:56px 24px 80px}
 
 /* ---------- header ---------- */
-header{border-bottom:1px solid var(--rule);padding-bottom:24px;margin-bottom:36px}
+header{
+  border-bottom:1px solid var(--rule);
+  padding-bottom:24px;
+  margin-bottom:36px;
+  display:flex;
+  align-items:flex-start;
+  gap:26px;
+}
+.portrait{
+  flex:0 0 136px;
+  width:136px;
+  height:136px;
+  object-fit:cover;
+  object-position:center 30%;
+  border-radius:8px;
+  border:1px solid var(--rule);
+  display:block;
+}
+.headtext{min-width:0}
 h1{
   font-size:2.1rem;
   line-height:1.15;
@@ -206,7 +224,9 @@ footer{
 @media (max-width:520px){
   body{font-size:16px}
   .wrap{padding:36px 20px 60px}
-  h1{font-size:1.75rem}
+  h1{font-size:1.6rem}
+  header{gap:16px}
+  .portrait{flex:0 0 96px;width:96px;height:96px}
   dl.contact{grid-template-columns:1fr;gap:2px}
   dl.contact dd{margin-bottom:10px}
 }
@@ -216,6 +236,8 @@ footer{
 <div class="wrap">
 
 <header>
+  <img class="portrait" src="photo.jpg" alt="Haneul Yi" width="136" height="136">
+  <div class="headtext">
   <h1>Haneul Yi</h1>
   <p class="title">Assistant Professor of Business Administration</p>
   <p class="affil">Truman State University &middot; Kirksville, Missouri</p>
@@ -228,6 +250,7 @@ footer{
     <!-- <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> -->
     <!-- <a href="https://www.linkedin.com/in/XXXX">LinkedIn</a> -->
   </nav>
+  </div>
 </header>
 
 <section id="about">
