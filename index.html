@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haneul Yi</title>
+<meta name="description" content="Haneul Yi — Assistant Professor of Business Administration, Truman State University. Research in innovation economics, corporate venture capital, and mergers and acquisitions.">
+<style>
+:root{
+  --bg:#ffffff;
+  --fg:#1a1a1a;
+  --muted:#5f6368;
+  --rule:#e2e2e0;
+  --accent:#7a2222;
+  --card:#faf9f7;
+  --maxw:760px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161a;
+    --fg:#e8e6e3;
+    --muted:#9aa0a6;
+    --rule:#2b2f36;
+    --accent:#d99a9a;
+    --card:#1b1e24;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:"Charter","Iowan Old Style","Georgia","Times New Roman",serif;
+  font-size:17px;
+  line-height:1.6;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:56px 24px 80px}
+
+/* ---------- header ---------- */
+header{border-bottom:1px solid var(--rule);padding-bottom:24px;margin-bottom:36px}
+h1{
+  font-size:2.1rem;
+  line-height:1.15;
+  margin:0 0 6px;
+  letter-spacing:-0.01em;
+  font-weight:600;
+}
+.title{margin:0;color:var(--fg);font-size:1.02rem}
+.affil{margin:2px 0 0;color:var(--muted);font-size:1.02rem}
+.links{
+  margin-top:16px;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.86rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+}
+.links a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+.links a:hover{border-bottom-color:var(--accent)}
+
+/* ---------- sections ---------- */
+section{margin-bottom:44px}
+h2{
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.78rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:600;
+  margin:0 0 18px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--rule);
+}
+h3{
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.82rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:600;
+  margin:32px 0 14px;
+}
+h3:first-of-type{margin-top:0}
+p{margin:0 0 14px}
+a{color:var(--accent)}
+
+.lede{font-size:1.04rem}
+.interests{
+  margin:14px 0 0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.82rem;
+}
+.interests li{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-radius:999px;
+  padding:3px 12px;
+  color:var(--muted);
+}
+
+/* ---------- papers ---------- */
+.paper{
+  padding:16px 0;
+  border-top:1px solid var(--rule);
+}
+.paper:first-of-type{border-top:none;padding-top:0}
+.paper-title{
+  font-size:1.06rem;
+  font-weight:600;
+  margin:0 0 4px;
+  line-height:1.35;
+}
+.coauthor{font-weight:400;color:var(--muted)}
+.jmp{
+  display:inline-block;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.68rem;
+  letter-spacing:0.09em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--bg);
+  background:var(--accent);
+  border-radius:3px;
+  padding:2px 8px;
+  margin-bottom:8px;
+}
+.meta{
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.8rem;
+  color:var(--muted);
+  margin:6px 0 0;
+}
+details{margin-top:8px}
+details summary{
+  cursor:pointer;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.8rem;
+  color:var(--accent);
+  list-style:none;
+  display:inline-block;
+  user-select:none;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸ ";display:inline-block}
+details[open] summary::before{content:"▾ "}
+details summary:hover{text-decoration:underline}
+.abstract{
+  margin-top:10px;
+  padding:14px 16px;
+  background:var(--card);
+  border-left:2px solid var(--rule);
+  font-size:0.94rem;
+  line-height:1.62;
+  color:var(--fg);
+}
+.abstract p{margin:0}
+
+/* ---------- cv + contact ---------- */
+.cv-line{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:10px;
+}
+.btn{
+  display:inline-block;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.86rem;
+  text-decoration:none;
+  color:var(--accent);
+  border:1px solid var(--accent);
+  border-radius:4px;
+  padding:6px 16px;
+}
+.btn:hover{background:var(--accent);color:var(--bg)}
+dl.contact{
+  margin:0;
+  display:grid;
+  grid-template-columns:96px 1fr;
+  gap:6px 16px;
+  font-size:0.98rem;
+}
+dl.contact dt{
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.8rem;
+  color:var(--muted);
+  padding-top:3px;
+}
+dl.contact dd{margin:0}
+
+footer{
+  margin-top:56px;
+  padding-top:20px;
+  border-top:1px solid var(--rule);
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:0.76rem;
+  color:var(--muted);
+}
+
+@media (max-width:520px){
+  body{font-size:16px}
+  .wrap{padding:36px 20px 60px}
+  h1{font-size:1.75rem}
+  dl.contact{grid-template-columns:1fr;gap:2px}
+  dl.contact dd{margin-bottom:10px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Haneul Yi</h1>
+  <p class="title">Assistant Professor of Business Administration</p>
+  <p class="affil">Truman State University &middot; Kirksville, Missouri</p>
+  <nav class="links">
+    <a href="mailto:hyi@truman.edu">hyi@truman.edu</a>
+    <a href="Haneul_Yi_CV.pdf">Curriculum Vitae (PDF)</a>
+    <!-- 아래 두 줄은 링크가 생기면 주석을 풀고 주소를 넣으세요 -->
+    <!-- <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> -->
+    <!-- <a href="https://www.linkedin.com/in/XXXX">LinkedIn</a> -->
+  </nav>
+</header>
+
+<section id="about">
+  <p class="lede">I am an Assistant Professor of Business Administration at Truman State University. I received my Ph.D. in Finance from Texas A&amp;M University in 2025.</p>
+  <p>My research studies how firms acquire innovation from outside their own boundaries, and what that acquisition does and does not transfer. Recent work examines corporate venture capital as a precursor to acquisition, the retention of inventors after a merger, and the acquisition of green technology by firms under environmental regulation. I work with patent text, deal-level data, and machine learning methods.</p>
+  <ul class="interests">
+    <li>Innovation Economics</li>
+    <li>Corporate Venture Capital</li>
+    <li>Mergers and Acquisitions</li>
+    <li>Sustainable Finance</li>
+    <li>Textual Analysis</li>
+    <li>Machine Learning</li>
+    <li>Labor Economics</li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+
+  <h3>Working Papers</h3>
+
+  <article class="paper">
+    <span class="jmp">Job Market Paper</span>
+    <p class="paper-title">When Pressure to Be Green Becomes Demand for Green Credentials <span class="coauthor">(with Kangryun Lee)</span></p>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abstract"><p>A firm under environmental regulation is recorded twice. The regulator records whether a plant met the condition written into its permit, and the audience that evaluates the firm keeps a separate record that ranks firms and credits what the firm has in place. We ask whether firms under regulatory pressure respond by buying green technology that moves the audience's record and not the regulator's. We use the 2005 designation of fine particulate nonattainment counties under the Clean Air Act, measuring exposure from the share of a firm's pre-shock air emissions originating at plants in counties later designated, and we identify a green acquisition from the target's own granted green patents, so the label does not depend on the acquirer's stated motive or the target's industry. Exposed firms become 4.08 percentage points more likely to acquire a target holding green technology, against a base rate of 2.86 percent, and we find no rise in overall acquisition activity. The increase is concentrated in climate and clean energy technology, acquisitions of air-pollution abatement technology show no detectable response, and the increase is larger at firms that more analysts follow. Following the deals the firm's environmental rating rises, while we detect no reduction in emissions and no reorientation of the acquirer's own invention. The targets and the patents are real, so what we document is not a divergence between what a firm says and what it does. It is a divergence between what the firm holds and what the regulation was written to change.</p></div>
+    </details>
+    <p class="meta">Presented at SWFA 2025</p>
+  </article>
+
+  <article class="paper">
+    <p class="paper-title">Try Before You Buy: Measuring Innovation Synergy Using Textual Analysis</p>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abstract"><p>An increasing number of acquirers make corporate venture capital (CVC) investments in private firms before acquiring them, a "two-step merger" strategy. Using textual analysis of patents within a real-options framework, I trace this strategy across three stages. Before the CVC, acquirers are more likely to invest in targets whose technology is more opaque, consistent with CVC as a way to gather information under uncertainty. After the CVC, pairs with greater technological alignment are more likely to proceed to an M&amp;A. After the merger, acquirers that previously invested via CVC expand their technological scope, and patents filed by target and acquirer inventors share more newly aligned keywords and closer thematic similarity than in withdrawn deals. CVC thus serves as a real option that lays the groundwork for innovation synergy in later M&amp;A.</p></div>
+    </details>
+    <p class="meta">Presented at Texas A&amp;M University Brownbag Series; Texas A&amp;M University PG&amp;E Corporation Distinguished Lecture Series; SFA 2025; MFA 2026</p>
+  </article>
+
+  <article class="paper">
+    <p class="paper-title">Choosing Twice: What the Contract Does Not Transfer in the Acquisition of Innovation</p>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abstract"><p>An acquisition of an innovative firm conveys patents under the purchase agreement and the inventors who produced them under no comparable obligation. A corporation that had invested in the target before bidding has observed it from inside and knows more about what it buys than an outside acquirer. Using this variation in corporate venture capital, the paper asks whether an acquirer's prior information shows in which target it selects and which of a target's inventors it retains. Across 29,022 inventors in 2,517 acquisitions of venture-backed firms from 1981 to 2022, acquirers with prior stakes select better targets, more highly cited and technologically more distant, and the pattern holds where no corporation held a stake, so it reflects the acquiring firm. Overall, these acquirers retain about as many of the target's inventors as other buyers, and the difference, 50.3 percent against 42.9, is not significant. The shortfall is confined to the top-ranked inventors who hold most of the technology, who are 14.9 percentage points less likely to be retained. Prior information improves which target an acquirer selects but not which of its inventors it keeps.</p></div>
+    </details>
+  </article>
+
+  <h3>Work in Progress</h3>
+
+  <article class="paper">
+    <p class="paper-title">AI CAPEX and Innovation: Evidence from GPU Adoption <span class="coauthor">(with Raymond Kim)</span></p>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abstract"><p>Firms that buy AI computing capacity may substitute purchased methods for methods they would otherwise have invented. Using firm-level adoption of graphics processing units, we find that adoption reduces internal process patenting while total patenting, product patenting, research budgets, and inventor headcount are unchanged. The contraction is broad rather than confined to the methods purchased, and it operates at the extensive margin of adoption.</p></div>
+    </details>
+  </article>
+
+  <article class="paper">
+    <p class="paper-title">Who Mimics? Leaders, Followers, and the Decline of Capital Structure Peer Effects</p>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abstract"><p>Extending Leary and Roberts (2014) to a 1975 to 2023 sample, this paper documents heterogeneity in capital-structure peer effects. Firms that lead their industry show no measurable response to peers while followers respond strongly, and the decline in the aggregate peer effect after 2000 is accounted for by the entry of firms that do not mimic rather than by a change among incumbents.</p></div>
+    </details>
+    <p class="meta">Previously circulated as "How Uncertainty Shapes Peer Effects in Capital Structure." Presented at Texas A&amp;M University Brownbag Series</p>
+  </article>
+
+  <article class="paper">
+    <p class="paper-title">Common Ownership of Corporate Venture Capital and the Economic Value of Innovation</p>
+    <p class="meta">Presented at Texas A&amp;M University Brownbag Series. Supported by the Mays Innovation Research Center Ph.D. Paper Award / Grant</p>
+  </article>
+</section>
+
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <div class="cv-line">
+    <a class="btn" href="Haneul_Yi_CV.pdf">Download CV (PDF)</a>
+    <span class="meta">Updated August 2026</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <dl class="contact">
+    <dt>Email</dt>
+    <dd><a href="mailto:hyi@truman.edu">hyi@truman.edu</a></dd>
+    <dt>Address</dt>
+    <!-- 건물명 / 호실을 아는 대로 아래 줄에 추가하세요 -->
+    <dd>Truman State University<br>Kirksville, Missouri</dd>
+  </dl>
+</section>
+
+<footer>
+  &copy; 2026 Haneul Yi
+</footer>
+
+</div>
+</body>
+</html>
