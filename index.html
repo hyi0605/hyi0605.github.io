@@ -135,6 +135,14 @@ a{color:var(--accent)}
   line-height:1.35;
 }
 .coauthor{font-weight:400;color:var(--muted)}
+.paper-title a{
+  color:var(--fg);
+  text-decoration:none;
+  border-bottom:1px solid var(--rule);
+}
+.paper-title a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.meta a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+.meta a:hover{border-bottom-color:var(--accent)}
 .jmp{
   display:inline-block;
   font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -255,7 +263,7 @@ footer{
 
 <section id="about">
   <p class="lede">I am an Assistant Professor of Business Administration at Truman State University. I received my Ph.D. in Finance from Texas A&amp;M University in 2025.</p>
-  <p>My research asks what a firm acquires when it buys technology from outside, and what that purchase changes inside the firm. A purchase is recorded as an addition to what the firm holds. My papers ask what follows from it, whether operations change, whether internal invention continues, and what the transaction does not transfer. My job market paper shows that firms under environmental regulation acquire green technology that raises their environmental rating without reducing their emissions. Related projects examine what a firm stops inventing after it buys AI computing capacity, and which of a target's inventors an acquirer retains after the patents have changed hands.</p>
+  <p>My research asks what a firm acquires when it buys technology from outside, and what that purchase changes inside the firm. A purchase is recorded as an addition to what the firm holds. My papers ask what follows from it, whether operations change, whether internal invention continues, and what the transaction does not transfer. My job market paper shows that firms under environmental regulation acquire green technology that raises the rating an outside party assigns to the company, and that the technology acquired is not the technology the regulation was written to require. Related projects examine what a firm stops inventing after it buys AI computing capacity, and which of a target's inventors an acquirer retains after the patents have changed hands.</p>
   <p>The technology a firm holds and the environmental record it carries are not reported in financial statements. I measure both from text, primarily patent documents, regulatory disclosures, and corporate filings, and combine those measures with quasi-experimental variation in regulatory pressure, in technology adoption, and in what an acquirer knows before it bids. The underlying data links patent full text, classifications, and inventor records to firms across VentureXpert, SDC, Crunchbase, and Compustat, and joins facility-level records from the EPA Toxics Release Inventory to parent firms.</p>
   <p>Future work runs in three directions, artificial intelligence and financial technology, sustainable finance, and machine learning and textual analysis as measurement methods.</p>
   <ul class="interests">
@@ -276,12 +284,12 @@ footer{
 
   <article class="paper">
     <span class="jmp">Job Market Paper</span>
-    <p class="paper-title">When Pressure to Be Green Becomes Demand for Green Credentials <span class="coauthor">(with Kangryun Lee)</span></p>
+    <p class="paper-title"><a href="Green_Acquisitions.pdf">Credentials, Not Abatement: Green Acquisitions under the Clean Air Act</a> <span class="coauthor">(with Kangryun Lee)</span></p>
     <details>
       <summary>Abstract</summary>
-      <div class="abstract"><p>A firm under environmental regulation is recorded twice. The regulator records whether a plant met the condition written into its permit, and the audience that evaluates the firm keeps a separate record that ranks firms and credits what the firm has in place. We ask whether firms under regulatory pressure respond by buying green technology that moves the audience's record and not the regulator's. We use the 2005 designation of fine particulate nonattainment counties under the Clean Air Act, measuring exposure from the share of a firm's pre-shock air emissions originating at plants in counties later designated, and we identify a green acquisition from the target's own granted green patents, so the label does not depend on the acquirer's stated motive or the target's industry. Exposed firms become 4.08 percentage points more likely to acquire a target holding green technology, against a base rate of 2.86 percent, and we find no rise in overall acquisition activity. The increase is concentrated in climate and clean energy technology, acquisitions of air-pollution abatement technology show no detectable response, and the increase is larger at firms that more analysts follow. Following the deals the firm's environmental rating rises, while we detect no reduction in emissions and no reorientation of the acquirer's own invention. The targets and the patents are real, so what we document is not a divergence between what a firm says and what it does. It is a divergence between what the firm holds and what the regulation was written to change.</p></div>
+      <div class="abstract"><p>Environmental regulation attaches to facilities, while investors and rating providers assess the company that owns them. We ask whether regulatory pressure changes what the company owns. Around the 2005 fine particulate nonattainment designations, firms with more than a fifth of their pre-shock air emissions at plants in the designated counties became 4.08 percentage points more likely to acquire a target holding green technology, against a base rate of 2.86 percent. They did not acquire more overall. Exposure is the share of a firm's pre-shock air emissions at plants in the designated counties. We separate three explanations of that response by what the deals contain and by what follows them. The compliance explanation requires the acquired technology to treat the regulated emissions. Of the green patents that arrive with the targets, 2.2 percent are air-pollution abatement, and the acquisition response is confined to the remainder. The same firms became more likely to file abatement patents of their own, so the acquisitions did not substitute for their own abatement effort. The technology-sourcing explanation requires the acquired technology to enter what the acquirer invents next. We find no reorientation of the acquirers' invention toward it and no abnormal announcement return. The third explanation is that firms bought an attribute an outside party can observe and score. What changes after the deals is the environmental rating, on the item assessed at the level of the company and not on the items coded from what its facilities do, and the acquisition response is larger at firms that more parties assess. Measures built from a firm's own operations and measures built from what it owns therefore answer different questions about the same firm.</p></div>
     </details>
-    <p class="meta">Presented at SWFA 2025</p>
+    <p class="meta"><a href="Green_Acquisitions.pdf">PDF</a> &middot; Presented at SWFA 2025</p>
   </article>
 
   <article class="paper">
